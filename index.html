@@ -22,68 +22,396 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="wrap">
 
-  <nav>
-    <a href="index.html" class="brand">
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header id="siteHeader">
+  <div class="nav-inner">
+    <a href="#hero" class="brand">
       <span class="brand-mark">PS</span>
       Pushpendra Singh Sodha
     </a>
-    <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="Expertise.html">Skills</a>
-      <a href="Architecture.html">Architecture</a>
-      <a href="Experience.html">Experience</a>
-      <a href="Projects.html">Projects</a>
-      <a href="Credentials.html">Credentials</a>
+    <nav class="nav-links">
+      <a href="#hero" class="active">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme"></button>
+      <a href="resume.pdf" download class="nav-cta">Resume ↓</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
-    <a href="https://www.linkedin.com/in/pushpendra07/" target="_blank" rel="noopener" class="nav-cta">LinkedIn ↗</a>
-  </nav>
+  </div>
+</header>
 
-  <header>
-    <div class="eyebrow">ADOBE CERTIFIED EXPERT · 12+ YEARS</div>
-    <h1>Pushpendra Singh Sodha</h1>
-    <p class="role">Full-Stack Developer &amp; Adobe Commerce Solution Architect</p>
-    <p class="kicker">Full-Stack Engineering · Solution Architecture · E-commerce Systems</p>
-    <p class="lead">Building scalable web platforms, APIs and backend systems for international retailers across the UAE, Kuwait, Lebanon, Australia, Russia and the USA — with Adobe Commerce (Magento 2) as a 12-year deep specialty, and currently expanding into Python, MongoDB and AI-driven engineering.</p>
-    <div class="badges">
-      <span class="badge">PHP</span>
-      <span class="badge">React.js</span>
-      <span class="badge">REST / GraphQL APIs</span>
-      <span class="badge">Adobe Commerce</span>
-      <span class="badge">Magento 2</span>
-      <span class="badge">Solution Architecture</span>
-    </div>
-    <div class="cta-row">
-      <a href="Projects.html" class="btn-primary">Explore My Work</a>
-      <a href="https://www.linkedin.com/in/pushpendra07/" target="_blank" rel="noopener" class="btn-secondary">View LinkedIn</a>
-    </div>
-  </header>
-
-  <section id="about">
+<section id="hero" class="hero" style="border-top:none">
+  <div class="hero-grid">
     <div>
-      <div class="section-tag">ABOUT</div>
-      <h2>Twelve years of turning ambiguity into working systems</h2>
-      <p>I'm a full-stack developer with a deep specialty in Adobe Commerce (Magento 2) — pricing and loyalty systems, inventory and logistics integrations, ERP pipelines and REST/GraphQL APIs for international retailers. Ambiguity doesn't slow me down; I take loosely defined requirements and turn them into working systems.</p>
-      <p>My background spans rare cross-platform migration work — from custom PHP to Magento 1, Magento 1 to Magento 2, and Magento 1 to Adobe Commerce On-Premise — alongside hands-on leadership of small development teams through task assignment and code review. I'm currently expanding that foundation into Python, MongoDB and AI-driven engineering.</p>
-      <p>Increasingly, I'm the person clients and teams turn to for mentorship and technical direction.</p>
-    </div>
-    <div class="stat-grid">
-      <div class="stat-cell"><div class="stat-value">12+</div><div class="stat-label">Years of Experience</div></div>
-      <div class="stat-cell"><div class="stat-value">6</div><div class="stat-label">International Markets</div></div>
-      <div class="stat-cell"><div class="stat-value">7</div><div class="stat-label">Flagship Platforms</div></div>
-      <div class="stat-cell"><div class="stat-value">2</div><div class="stat-label">Adobe Certifications</div></div>
-    </div>
-  </section>
+      <div class="eyebrow">ADOBE CERTIFIED EXPERT · 12+ YEARS</div>
+      <h1>Pushpendra Singh Sodha</h1>
+      <p class="role">Full-Stack Developer &amp; Adobe Commerce Solution Architect</p>
+      <p class="lead">Building scalable web platforms, APIs and backend systems for international retailers across the UAE, Kuwait, Lebanon, Australia, Russia and the USA — with Adobe Commerce (Magento 2) as a 12-year deep specialty, and currently expanding into Python, MongoDB and AI-driven engineering.</p>
+      <div class="feature-list">
+        <div class="feature-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>7 flagship platforms shipped across 6 countries</div>
+        <div class="feature-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Rare cross-platform migration expertise</div>
+        <div class="feature-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Led teams of 2–3 developers on delivery</div>
+        <div class="feature-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Adobe Certified Expert &amp; Professional</div>
+      </div>
+      <div class="cta-row">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="resume.pdf" download class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+          Download Resume
+        </a>
+      </div>
 
-  <footer>
+      <div class="hero-stats">
+        <div><div class="id-stat-value">12+</div><div class="id-stat-label">Years Experience</div></div>
+        <div><div class="id-stat-value">6</div><div class="id-stat-label">Countries</div></div>
+        <div><div class="id-stat-value">7</div><div class="id-stat-label">Platforms Shipped</div></div>
+        <div><div class="id-stat-value">2</div><div class="id-stat-label">Adobe Certs</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head">
+    <div class="section-tag">SELECTED WORK</div>
+    <h2>Seven platforms, six countries, one engineering approach</h2>
+    <p>Click any card for the full breakdown.</p>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card flagship" tabindex="0" data-project-card
+      data-title="Grandiose Supermarket"
+      data-meta="Dubai, United Arab Emirates · Magento Open Source"
+      data-tags='["Magento Open Source","ERP + SAP","GraphQL","Klevu","Message Queues","Geofencing"]'
+      data-bullets='["Built a receipt-upload rewards feature validating receipts in real time against Zinrelo and Talon.One, with cron-based ERP fallback.","Developed a high-volume ERP import/update pipeline processing 10,000–20,000 SKUs per batch.","Rewrote a timing-out CSV export to output 50,000 products in 3–5 seconds.","Architected a bulk price and inventory sync pipeline, coordinating real-time updates across cache, indexer and Klevu search.","Extended time-based pricing across admin, storefront and GraphQL, enforced across cart, checkout, web, mobile and search.","Built a rule-based Customer Segment Module and a coupon-tracked Refer-a-Friend rewards program.","Designed a zone-based inventory and geofencing system using admin-configurable delivery polygons in Google Maps.","Architected a message-queue order workflow integrating Grubtech (kitchen ops) and FarEye (last-mile logistics).","Integrated Adjust for mobile attribution and MoEngage for behavior tracking, push and engagement campaigns.","Implemented Age-Restricted Product controls and delivered a SAP integration alongside the existing ERP."]'>
+      <span class="project-tag-flagship">FLAGSHIP PROJECT</span>
+      <h3>Grandiose Supermarket</h3>
+      <div class="project-meta">Dubai, UAE · Magento Open Source</div>
+      <p class="project-summary">10K–20K SKUs per ERP batch, 50K-product CSV export in 3–5s, geofenced delivery, message-queue order workflow across Grubtech and FarEye.</p>
+      <div class="project-tags"><span>ERP + SAP</span><span>GraphQL</span><span>Geofencing</span></div>
+      <span class="project-open">View full case study →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Antoine Online"
+      data-meta="Beirut, Lebanon · Adobe Commerce Cloud"
+      data-tags='["REST APIs","ERP","CSV Import"]'
+      data-bullets='["Designed and built Product Add/Update/Delete APIs, streamlining data processing and import/export efficiency.","Implemented ERP integration enabling seamless offline order processing between Magento and the client'"'"'s ERP.","Diagnosed a recurring back-order/out-of-stock issue and built a custom CSV import patch to fix it at the root cause.","Developed custom modules and extensions to enhance store functionality and product management workflows."]'>
+      <h3>Antoine Online</h3>
+      <div class="project-meta">Beirut, Lebanon · Adobe Commerce Cloud</div>
+      <p class="project-summary">Product Add/Update/Delete APIs and ERP integration enabling seamless offline order processing.</p>
+      <div class="project-tags"><span>REST APIs</span><span>ERP</span><span>CSV Import</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Fantasy World Toys"
+      data-meta="Kuwait City, Kuwait · Adobe Commerce On-Premise"
+      data-tags='["Team Leadership","GraphQL","Algolia"]'
+      data-bullets='["Served as dedicated client-side developer, handling day-to-day backend operations and prioritization.","Led a team of 2–3 developers on task assignment and code review, sharing delivery accountability with the PM.","Implemented Express Delivery, Click & Collect and Curbside Pickup fulfillment options.","Optimized REST and GraphQL APIs; integrated Algolia for search and Tabby for checkout."]'>
+      <h3>Fantasy World Toys</h3>
+      <div class="project-meta">Kuwait City, Kuwait · Adobe Commerce On-Premise</div>
+      <p class="project-summary">Led a 2–3 developer team while optimizing checkout, search and delivery fulfillment options.</p>
+      <div class="project-tags"><span>Team Leadership</span><span>GraphQL</span><span>Algolia</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="ToolMart"
+      data-meta="Perth, Australia · Adobe Commerce On-Premise"
+      data-tags='["Migration","Data Migration","Git"]'
+      data-bullets='["Designed and led the migration architecture from Magento 1 to Adobe Commerce On-Premise, including full data migration.","Rebuilt custom themes and redeveloped extensions on the new architecture, preserving existing business logic.","Managed Git workflow, code reviews and deployments through migration and post-launch stabilization.","Enhanced functionality through custom extensions and optimized performance post-migration."]'>
+      <h3>ToolMart</h3>
+      <div class="project-meta">Perth, Australia · Adobe Commerce On-Premise</div>
+      <p class="project-summary">Led migration architecture from Magento 1 to Adobe Commerce On-Premise with full data migration.</p>
+      <div class="project-tags"><span>Migration</span><span>Data Migration</span><span>Git</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Aquanexus"
+      data-meta="USA · Magento Open Source"
+      data-tags='["Multi-Vendor","Domain Mapping","Webkul"]'
+      data-bullets='["Built a multi-vendor setup running multiple independent vendor websites from a single Magento instance via domain mapping.","Designed a Payment Reminder Module with automated COD/bank-transfer email reminders.","Customized Webkul modules for vendor registration, purchase orders and split orders.","Managed ongoing integration of vendor-facing functionality across all storefronts."]'>
+      <h3>Aquanexus</h3>
+      <div class="project-meta">USA · Magento Open Source</div>
+      <p class="project-summary">Multi-vendor marketplace running independent vendor storefronts from one Magento instance.</p>
+      <div class="project-tags"><span>Multi-Vendor</span><span>Domain Mapping</span><span>Webkul</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Sterling Machinery"
+      data-meta="USA · Magento Open Source"
+      data-tags='["Architecture","Migration","Cart2Quote"]'
+      data-bullets='["Designed the system architecture for machinery product management, including the master/child data model.","Migrated the platform from custom PHP to Magento 1, then to Magento 2 Open Source.","Developed admin modules for machinery products, brand pages and role-specific tabs.","Implemented Ajax-driven product specification logic and enhanced the Cart2Quote module."]'>
+      <h3>Sterling Machinery</h3>
+      <div class="project-meta">USA · Magento Open Source</div>
+      <p class="project-summary">Designed master/child machine architecture and migrated from custom PHP to Magento 2.</p>
+      <div class="project-tags"><span>Architecture</span><span>Migration</span><span>Cart2Quote</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Kalombo"
+      data-meta="Moscow, Russia · Magento Open Source"
+      data-tags='["Performance","Localization","CSV Import"]'
+      data-bullets='["Designed the platform architecture with performance as the primary constraint, shaping module and theme decisions.","Built the platform natively on Magento Open Source with Auto Address API integration for localized address entry.","Set up Russia-specific payment methods to support local market requirements.","Managed CSV product/attribute imports and optimized performance by removing unused modules."]'>
+      <h3>Kalombo</h3>
+      <div class="project-meta">Moscow, Russia · Magento Open Source</div>
+      <p class="project-summary">Performance-first architecture with Russia-specific payments and localized address entry.</p>
+      <div class="project-tags"><span>Performance</span><span>Localization</span><span>CSV Import</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head">
+    <div class="section-tag">SKILLS</div>
+    <h2>Full-stack developer, with Adobe Commerce as a deep specialty</h2>
+    <p>Filter by category, or see everything at once.</p>
+  </div>
+
+  <div class="chip-row">
+    <button class="chip active" data-skill-filter="all">All</button>
+    <button class="chip" data-skill-filter="Commerce Platform">Commerce Platform</button>
+    <button class="chip" data-skill-filter="Backend">Backend</button>
+    <button class="chip" data-skill-filter="APIs &amp; Integration">APIs &amp; Integration</button>
+    <button class="chip" data-skill-filter="Frontend">Frontend</button>
+    <button class="chip" data-skill-filter="Engineering Practice">Engineering Practice</button>
+  </div>
+
+  <div class="skill-group" data-skill-group="Commerce Platform">
+    <div class="skill-group-title">Commerce Platform</div>
+    <div class="skill-cards">
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Adobe Commerce (Magento 2)</span><span class="skill-card-level">Expert</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:96%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Cloud / On-Premise / Open Source</span><span class="skill-card-level">Expert</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:94%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">ERP &amp; Data Migration</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="skill-group" data-skill-group="Backend">
+    <div class="skill-group-title">Backend</div>
+    <div class="skill-cards">
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">PHP</span><span class="skill-card-level">Expert</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:92%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">MySQL</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="skill-group" data-skill-group="APIs &amp; Integration">
+    <div class="skill-group-title">APIs &amp; Integration</div>
+    <div class="skill-cards">
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">REST / GraphQL / SOAP</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:88%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Payment Gateways</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:84%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Shipping Providers</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Message Queues</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Klevu / Algolia Search</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="skill-group" data-skill-group="Frontend">
+    <div class="skill-group-title">Frontend</div>
+    <div class="skill-cards">
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">JavaScript / jQuery</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">HTML / CSS</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">React.js</span><span class="skill-card-level">Working</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:65%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="skill-group" data-skill-group="Engineering Practice">
+    <div class="skill-group-title">Engineering Practice</div>
+    <div class="skill-cards">
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Git</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Code Review &amp; Testing</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Security Hardening (PCI)</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Performance Optimization</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-card"><div class="skill-card-top"><span class="skill-card-name">Technical Leadership &amp; Mentoring</span><span class="skill-card-level">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:8px">
+    <div class="skill-group-title" style="margin-bottom:8px">Currently Building</div>
+    <p class="learning-note">Actively learning, not yet production-shipped — I'd rather be upfront about where I am on these than overstate it.</p>
+    <div class="learning-row">
+      <span class="learning-chip"><span class="learning-dot"></span>Python</span>
+      <span class="learning-chip"><span class="learning-dot"></span>MongoDB</span>
+      <span class="learning-chip"><span class="learning-dot"></span>React.js Full-Stack</span>
+      <span class="learning-chip"><span class="learning-dot"></span>AI-Driven Search &amp; Personalization</span>
+      <span class="learning-chip"><span class="learning-dot"></span>AI in Adobe Commerce</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="max-width:940px">
+  <div class="section-head">
+    <div class="section-tag">EXPERIENCE</div>
+    <h2>Career timeline</h2>
+  </div>
+  <div class="exp-row">
     <div>
-      <div class="footer-name">Pushpendra Singh Sodha</div>
-      <div class="footer-role">Full-Stack Developer & Adobe Commerce Solution Architect</div>
+      <div class="exp-period">Sep 2021 – Present</div>
+      <div class="exp-location">Remote</div>
     </div>
-    <a href="https://www.linkedin.com/in/pushpendra07/" target="_blank" rel="noopener" class="footer-link">linkedin.com/in/pushpendra07 ↗</a>
-  </footer>
+    <div>
+      <h3 class="exp-role">Senior Software Developer</h3>
+      <div class="exp-company">Krish TechnoLabs</div>
+      <ul class="exp-bullets">
+        <li>Develop and maintain Adobe Commerce (Magento 2) stores, including custom themes, extensions and ERP/data migration.</li>
+        <li>Integrated Adobe Commerce with third-party payment gateways, shipping providers and marketing/reward platforms.</li>
+        <li>Optimized site performance and scalability via caching and database tuning, using New Relic, PageSpeed Insights and GTmetrix while maintaining PCI compliance.</li>
+        <li>Collaborated directly with clients, designers and PMs across multiple international markets, translating technical constraints into business-ready solutions.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp-row">
+    <div>
+      <div class="exp-period">Mar 2014 – Sep 2021</div>
+      <div class="exp-location">Bikaner</div>
+    </div>
+    <div>
+      <h3 class="exp-role">Senior Software Developer</h3>
+      <div class="exp-company">Sunarc Technologies</div>
+      <ul class="exp-bullets">
+        <li>Designed and implemented RESTful APIs for third-party service integration, supporting secure, high-volume data flow.</li>
+        <li>Identified and resolved architectural and performance bottlenecks, improving Magento 2 scalability for high-traffic stores.</li>
+        <li>Mentored junior developers through daily stand-ups, code reviews and Git-based version control.</li>
+        <li>Developed reusable, testable PHP modules for Magento 2 extensions, reducing rework across client projects.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
+<section id="credentials">
+  <div class="section-head">
+    <div class="section-tag">CREDENTIALS</div>
+    <h2>Certifications, reach &amp; recognition</h2>
+  </div>
+
+  <div class="cred-grid">
+    <div class="cred-card">
+      <div class="cred-mark">A</div>
+      <div>
+        <h4>Adobe Certified Expert — Adobe Commerce Developer</h4>
+        <div class="cred-issuer">Adobe</div>
+        <a href="https://certification.adobe.com/credential/verify/0337ceaf-c351-4151-a1b6-dd9e93b6ba6e" target="_blank" rel="noopener" class="cred-verify">Verify credential ↗</a>
+      </div>
+    </div>
+    <div class="cred-card">
+      <div class="cred-mark">A</div>
+      <div>
+        <h4>Adobe Certified Professional — Adobe Commerce Developer</h4>
+        <div class="cred-issuer">Adobe</div>
+        <a href="https://certification.adobe.com/credential/verify/a2be427f-cf35-4114-ab9c-5bdb4ca187a2" target="_blank" rel="noopener" class="cred-verify">Verify credential ↗</a>
+      </div>
+    </div>
+    <div class="cred-card">
+      <div class="cred-mark">★</div>
+      <div>
+        <h4>Mountain Movers</h4>
+        <div class="cred-issuer">Krish TechnoLabs — outstanding project delivery</div>
+      </div>
+    </div>
+    <div class="cred-card">
+      <div class="cred-mark">★</div>
+      <div>
+        <h4>Best Team Player</h4>
+        <div class="cred-issuer">Sunarc Technologies — teamwork &amp; collaboration</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-group-title" style="margin-bottom:16px">International reach — 6 countries, one engineering discipline</div>
+  <div class="market-grid">
+    <div class="market-card"><span class="market-dot"></span><div><div class="market-country">United Arab Emirates</div><div class="market-project">Grandiose Supermarket, Dubai</div></div></div>
+    <div class="market-card"><span class="market-dot"></span><div><div class="market-country">Kuwait</div><div class="market-project">Fantasy World Toys, Kuwait City</div></div></div>
+    <div class="market-card"><span class="market-dot"></span><div><div class="market-country">Lebanon</div><div class="market-project">Antoine Online, Beirut</div></div></div>
+    <div class="market-card"><span class="market-dot"></span><div><div class="market-country">Australia</div><div class="market-project">ToolMart, Perth</div></div></div>
+    <div class="market-card"><span class="market-dot"></span><div><div class="market-country">Russia</div><div class="market-project">Kalombo, Moscow</div></div></div>
+    <div class="market-card"><span class="market-dot"></span><div><div class="market-country">United States</div><div class="market-project">Aquanexus &amp; Sterling Machinery</div></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <div class="section-tag">CONTACT</div>
+    <h2>Let's build something</h2>
+    <p>Open to full-stack and Adobe Commerce engineering roles, contract work, or just a conversation.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Get in touch</h3>
+      <p class="sub">The fastest way to reach me is LinkedIn — I read every message.</p>
+      <div class="contact-row"><span class="label">Location</span><span class="value">Bikaner, Rajasthan, India (Remote)</span></div>
+      <div class="contact-row"><span class="label">LinkedIn</span><span class="value"><a href="https://www.linkedin.com/in/pushpendra07/" target="_blank" rel="noopener">linkedin.com/in/pushpendra07 ↗</a></span></div>
+      <div class="cta-row" style="margin-top:20px">
+        <a href="https://www.linkedin.com/in/pushpendra07/" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          Message on LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <h3>Résumé</h3>
+      <p class="sub">Full work history, technical skills and certifications in one PDF.</p>
+      <div class="resume-download">
+        <div>
+          <div class="resume-download-text">Pushpendra_Singh_Sodha_Resume.pdf</div>
+          <div class="resume-download-sub">Updated 2026 · ~117 KB</div>
+        </div>
+        <a href="resume.pdf" download class="btn-primary" style="padding:10px 18px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+          Download
+        </a>
+      </div>
+      <div style="margin-top:20px">
+        <div class="skill-group-title" style="margin-bottom:10px">Available for</div>
+        <div class="learning-row">
+          <span class="learning-chip">Full-time roles</span>
+          <span class="learning-chip">Contract / freelance</span>
+          <span class="learning-chip">Adobe Commerce consulting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-name">Pushpendra Singh Sodha</div>
+    <div class="footer-role">Full-Stack Developer &amp; Adobe Commerce Solution Architect</div>
+  </div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/pushpendra07/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="resume.pdf" download>Resume ↓</a>
+  </div>
+</footer>
+
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="modal-backdrop" id="projectModalBackdrop">
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true">
+    <button class="modal-close" type="button">✕</button>
+    <h3 class="modal-title"></h3>
+    <div class="project-meta modal-meta"></div>
+    <ul class="modal-list"></ul>
+    <div class="project-tags modal-tags"></div>
+  </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>

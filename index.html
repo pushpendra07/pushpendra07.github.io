@@ -96,103 +96,148 @@
       <h3>Grandiose Supermarket</h3>
       <div class="project-meta">Dubai, UAE · Magento Open Source</div>
       <p class="project-summary">Dual discount-engine architecture (Talon.One + Zinrelo), a from-scratch in-store Picker/Dispatch app, SAP ERP wired into every order event, and ~40 GraphQL modules powering a headless storefront.</p>
-      <div class="project-tags"><span>Talon.One + SAP</span><span>In-Store Picker App</span><span>Headless GraphQL</span></div>
+      <ul class="project-highlights">
+        <li>Talon.One + Zinrelo dual discount-engine architecture</li>
+        <li>In-store Picker &amp; Dispatcher app (21 GraphQL modules)</li>
+        <li>SAP ERP wired into every order-lifecycle event</li>
+      </ul>
+      <div class="project-tags"><span>Talon.One + SAP</span><span>In-Store Picker App</span><span>Headless GraphQL</span><span>Zinrelo Loyalty</span></div>
       <span class="project-open">View full case study →</span>
-    </div>
-
-    <div class="project-card" tabindex="0" data-project-card
-      data-title="Antoine Online"
-      data-meta="Beirut, Lebanon · Adobe Commerce Cloud"
-      data-tags='["REST APIs","ERP","CSV Import"]'
-      data-bullets='["Designed and built Product Add/Update/Delete APIs, streamlining data processing and import/export efficiency.","Implemented ERP integration enabling seamless offline order processing between Magento and the client&#39;s ERP.","Diagnosed a recurring back-order/out-of-stock issue and built a custom CSV import patch to fix it at the root cause.","Developed custom modules and extensions to enhance store functionality and product management workflows."]'>
-      <h3>Antoine Online</h3>
-      <div class="project-meta">Beirut, Lebanon · Adobe Commerce Cloud</div>
-      <p class="project-summary">Product Add/Update/Delete APIs and ERP integration enabling seamless offline order processing.</p>
-      <div class="project-tags"><span>REST APIs</span><span>ERP</span><span>CSV Import</span></div>
-      <span class="project-open">View details →</span>
     </div>
 
     <div class="project-card" tabindex="0" data-project-card
       data-title="Fantasy World Toys"
       data-meta="Kuwait City, Kuwait · Adobe Commerce On-Premise"
-      data-tags='["Team Leadership","GraphQL","Algolia"]'
-      data-bullets='["Served as dedicated client-side developer, handling day-to-day backend operations and prioritization.","Led a team of 2–3 developers on task assignment and code review, sharing delivery accountability with the PM.","Implemented Express Delivery, Click & Collect and Curbside Pickup fulfillment options.","Optimized REST and GraphQL APIs; integrated Algolia for search and Tabby for checkout."]'>
+      data-tags='["Team Leadership","GraphQL","Algolia","Multi-Mode Delivery","Knet + UPay","MS Dynamics AX","Tabby BNPL"]'
+      data-bullets='["Served as dedicated client-side developer, handling day-to-day backend operations and prioritization.","Led a team of 2–3 developers on task assignment and code review, sharing delivery accountability with the PM.","Built a multi-mode delivery engine — Express, Home Delivery, Click &amp; Collect and Curbside Pickup — with mode-specific payment restrictions and SMS milestone notifications through the order lifecycle.","Integrated Kuwait national payment networks (Knet, UPay) alongside CyberSource Secure Acceptance and Tabby buy-now-pay-later.","Built a Microsoft Dynamics AX ERP bridge syncing categories, customers and orders.","Delivered a full gift-wrap options system and a coupon auto-apply engine, built on top of Mageplaza&#39;s GiftWrap and Abandoned Cart extensions.","Patched and extended over a dozen third-party extensions (Amasty, Magedelight, Mageplaza, CyberSource, Eltrino and more) — the deepest third-party override footprint in the whole portfolio at 62 touch-points.","Added SMS OTP login, social login (Facebook/Google), and an in-store kiosk mode.","Built shop-by-age filtering, daily-deal and star-product merchandising, and shop-by-brand navigation.","Optimized REST and GraphQL APIs; integrated Algolia for search and Tabby for checkout."]'>
       <h3>Fantasy World Toys</h3>
       <div class="project-meta">Kuwait City, Kuwait · Adobe Commerce On-Premise</div>
-      <p class="project-summary">Led a 2–3 developer team while optimizing checkout, search and delivery fulfillment options.</p>
-      <div class="project-tags"><span>Team Leadership</span><span>GraphQL</span><span>Algolia</span></div>
+      <p class="project-summary">Led a 2–3 developer team building a multi-mode delivery engine, a Microsoft Dynamics AX ERP bridge, and Kuwait-specific payment integrations across 47 custom modules.</p>
+      <ul class="project-highlights">
+        <li>Multi-mode delivery: Express, Home, Click&amp;Collect, Curbside</li>
+        <li>Microsoft Dynamics AX ERP bridge + Knet/UPay payments</li>
+        <li>Deepest third-party override footprint in the portfolio</li>
+      </ul>
+      <div class="project-tags"><span>Team Leadership</span><span>GraphQL</span><span>Algolia</span><span>MS Dynamics AX</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Antoine Online"
+      data-meta="Beirut, Lebanon · Adobe Commerce Cloud"
+      data-tags='["REST APIs","ERP","CSV Import","Arabic URLs","SFTP","Multi-Website"]'
+      data-bullets='["Designed and built Product Add/Update/Delete APIs, streamlining data processing and import/export efficiency.","Built a two-way ERP sync (ErpBridge) covering products, prices, inventory, categories, customers and orders via scheduled cron jobs plus an admin monitoring grid.","Diagnosed a recurring back-order/out-of-stock issue and built a custom CSV import patch to fix it at the root cause.","Built a custom front-controller router enabling Arabic-language product URLs (spaces, special characters) where Magento&#39;s default URL sanitizer would otherwise strip them.","Delivered a multi-website frontend switcher and country-based shipping restrictions layered on the third-party Webkul Shipping Restrictions extension.","Built a reusable SFTP helper module with an admin \"Test Connection\" button, reused across other integrations.","Added CLI tools for bulk gift-card and newsletter-subscriber migration, plus category-data and catalog-attribute migration patches.","Developed custom modules and extensions to enhance store functionality and product management workflows."]'>
+      <h3>Antoine Online</h3>
+      <div class="project-meta">Beirut, Lebanon · Adobe Commerce Cloud</div>
+      <p class="project-summary">Two-way ERP sync, Arabic-language product URLs, and a multi-website switcher with country-based shipping restrictions, across 25 custom modules.</p>
+      <ul class="project-highlights">
+        <li>Two-way ERP sync (ErpBridge) via cron + admin grid</li>
+        <li>Arabic-language product URLs via custom routing</li>
+        <li>Multi-website switcher + shipping restrictions</li>
+      </ul>
+      <div class="project-tags"><span>REST APIs</span><span>ERP</span><span>CSV Import</span><span>Arabic URLs</span></div>
       <span class="project-open">View details →</span>
     </div>
 
     <div class="project-card" tabindex="0" data-project-card
       data-title="ToolMart"
       data-meta="Perth, Australia · Adobe Commerce On-Premise"
-      data-tags='["Migration","Data Migration","Git"]'
-      data-bullets='["Designed and led the migration architecture from Magento 1 to Adobe Commerce On-Premise, including full data migration.","Rebuilt custom themes and redeveloped extensions on the new architecture, preserving existing business logic.","Managed Git workflow, code reviews and deployments through migration and post-launch stabilization.","Enhanced functionality through custom extensions and optimized performance post-migration."]'>
+      data-tags='["Migration","Data Migration","Git","PDP Rebuild","Request-a-Quote","Extension Overrides"]'
+      data-bullets='["Designed and led the migration architecture from Magento 1 to Adobe Commerce On-Premise, including full data migration.","Rebuilt custom themes and redeveloped extensions on the new architecture, preserving existing business logic.","Rebuilt the product detail page end-to-end — brand display, extra info, custom labels, shipping data, stock ETA and warranty information.","Delivered a full Request-a-Quote feature and a separate Request-a-Catalogue feature, each with its own entity, admin grid and e-mail notifications.","Extended five separately purchased extensions (Amasty Banner Slider, Mirasvit Search Ultimate, WeltPixel Owl Carousel, Trustpilot Reviews, Xtento PDF) to match site-specific behavior.","Built an admin IP-logging page and additional order-view tooling for support staff.","Managed Git workflow, code reviews and deployments through migration and post-launch stabilization.","Enhanced functionality through custom extensions and optimized performance post-migration, including removing an auth-popup block sitewide for faster page loads."]'>
       <h3>ToolMart</h3>
       <div class="project-meta">Perth, Australia · Adobe Commerce On-Premise</div>
-      <p class="project-summary">Led migration architecture from Magento 1 to Adobe Commerce On-Premise with full data migration.</p>
-      <div class="project-tags"><span>Migration</span><span>Data Migration</span><span>Git</span></div>
-      <span class="project-open">View details →</span>
-    </div>
-
-    <div class="project-card" tabindex="0" data-project-card
-      data-title="Aquanexus"
-      data-meta="USA · Magento Open Source"
-      data-tags='["Multi-Vendor","Domain Mapping","Webkul"]'
-      data-bullets='["Built a multi-vendor setup running multiple independent vendor websites from a single Magento instance via domain mapping.","Designed a Payment Reminder Module with automated COD/bank-transfer email reminders.","Customized Webkul modules for vendor registration, purchase orders and split orders.","Managed ongoing integration of vendor-facing functionality across all storefronts."]'>
-      <h3>Aquanexus</h3>
-      <div class="project-meta">USA · Magento Open Source</div>
-      <p class="project-summary">Multi-vendor marketplace running independent vendor storefronts from one Magento instance.</p>
-      <div class="project-tags"><span>Multi-Vendor</span><span>Domain Mapping</span><span>Webkul</span></div>
-      <span class="project-open">View details →</span>
-    </div>
-
-    <div class="project-card" tabindex="0" data-project-card
-      data-title="Sterling Machinery"
-      data-meta="USA · Magento Open Source"
-      data-tags='["Architecture","Migration","Cart2Quote"]'
-      data-bullets='["Designed the system architecture for machinery product management, including the master/child data model.","Migrated the platform from custom PHP to Magento 1, then to Magento 2 Open Source.","Developed admin modules for machinery products, brand pages and role-specific tabs.","Implemented Ajax-driven product specification logic and enhanced the Cart2Quote module."]'>
-      <h3>Sterling Machinery</h3>
-      <div class="project-meta">USA · Magento Open Source</div>
-      <p class="project-summary">Designed master/child machine architecture and migrated from custom PHP to Magento 2.</p>
-      <div class="project-tags"><span>Architecture</span><span>Migration</span><span>Cart2Quote</span></div>
-      <span class="project-open">View details →</span>
-    </div>
-
-    <div class="project-card" tabindex="0" data-project-card
-      data-title="Kalombo"
-      data-meta="Moscow, Russia · Magento Open Source"
-      data-tags='["Performance","Localization","CSV Import"]'
-      data-bullets='["Designed the platform architecture with performance as the primary constraint, shaping module and theme decisions.","Built the platform natively on Magento Open Source with Auto Address API integration for localized address entry.","Set up Russia-specific payment methods to support local market requirements.","Managed CSV product/attribute imports and optimized performance by removing unused modules."]'>
-      <h3>Kalombo</h3>
-      <div class="project-meta">Moscow, Russia · Magento Open Source</div>
-      <p class="project-summary">Performance-first architecture with Russia-specific payments and localized address entry.</p>
-      <div class="project-tags"><span>Performance</span><span>Localization</span><span>CSV Import</span></div>
-      <span class="project-open">View details →</span>
-    </div>
-
-    <div class="project-card" tabindex="0" data-project-card
-      data-title="Al-Ateeqi"
-      data-meta="Fashion &amp; Beauty Retail · Adobe Commerce (Magento 2)"
-      data-tags='["Adobe Commerce (Magento 2)","ERP Sync","RabbitMQ","GDPR Consent","Admin CRUD","Custom Theming"]'
-      data-bullets='["Delivered two purchased Magedelight themes (BeautyGo, FashionGo) with the heaviest LESS/SCSS customization footprint in the whole portfolio — 203 style files layered on top of the base themes.","Split ERP sync into two purpose-built modules — a scheduled cron push for inventory, price, product and order data, and a separate async RabbitMQ order-export queue — rather than one monolith.","Built two fully self-built admin CRUD systems from scratch: a banner-slider (desktop/mobile images, page targeting) and a product-label system (attribute-based or manual assignment, store-scoped).","Added a GDPR consent-capture flow at login and registration, with full consent logging.","Implemented a \"Buy Now\" checkout bypass (with bundle-product support) and AJAX add-to-wishlist across listing, product page and search results.","Customized third-party OTP mobile login (Magecomp Mobilelogin) and social login (Magedelight Facebook/Google)."]'>
-      <h3>Al-Ateeqi</h3>
-      <div class="project-meta">Fashion &amp; Beauty Retail · Adobe Commerce (Magento 2)</div>
-      <p class="project-summary">Two fashion/beauty storefronts with the heaviest LESS/SCSS customization footprint in the portfolio, split ERP sync, and from-scratch banner and product-label admin systems.</p>
-      <div class="project-tags"><span>ERP Sync</span><span>RabbitMQ</span><span>Admin CRUD</span></div>
+      <p class="project-summary">Led migration architecture from Magento 1 to Adobe Commerce On-Premise, rebuilt the PDP end-to-end, and delivered a Request-a-Quote/Catalogue system across 20 custom modules.</p>
+      <ul class="project-highlights">
+        <li>Migrated Magento 1 → Adobe Commerce On-Premise</li>
+        <li>Full PDP rebuild (brand, labels, warranty, stock ETA)</li>
+        <li>Request-a-Quote + Request-a-Catalogue systems</li>
+      </ul>
+      <div class="project-tags"><span>Migration</span><span>Data Migration</span><span>Git</span><span>PDP Rebuild</span></div>
       <span class="project-open">View details →</span>
     </div>
 
     <div class="project-card" tabindex="0" data-project-card
       data-title="Switch"
       data-meta="Headless PWA Storefront · Adobe Commerce (GraphQL)"
-      data-tags='["GraphQL","Headless / PWA","Dashboard Builder","Tabby BNPL","Store Locator"]'
-      data-bullets='["Built a GraphQL-only backend for a headless PWA storefront — no classic Luma theme at all; the real customer-facing frontend is a separate PWA application.","Delivered a drag-and-drop homepage/dashboard builder exposed through a composite GraphQL resolver, assembling banner, product, category and CMS-block sliders.","Extended Magento&#39;s GraphQL schema across catalog, customer, checkout, store config, compare-list, wishlist, reviews and product-alert domains.","Added a GraphQL store-locator (physical store CRUD plus per-product store availability) and a warranty-product attachment system tied to the products it covers.","Found and fixed a GraphQL-specific bug where customizable product options were silently dropped on add-to-cart — traced to the cart-mutation resolver rather than the underlying cart logic, and fixed with a narrowly-scoped override.","Exposed Tabby buy-now-pay-later merchant configuration via the StoreConfig GraphQL type."]'>
+      data-tags='["GraphQL","Headless / PWA","Dashboard Builder","Tabby BNPL","Store Locator","Brand Slider"]'
+      data-bullets='["Built a GraphQL-only backend for a headless PWA storefront — no classic Luma theme at all; the real customer-facing frontend is a separate PWA application.","Delivered a drag-and-drop homepage/dashboard builder exposed through a composite GraphQL resolver, assembling banner, product, category and CMS-block sliders.","Extended Magento&#39;s GraphQL schema across catalog, customer, checkout, store config, compare-list, wishlist, reviews and product-alert domains.","Added a GraphQL store-locator (physical store CRUD plus per-product store availability) and a warranty-product attachment system tied to the products it covers.","Found and fixed a GraphQL-specific bug where customizable product options were silently dropped on add-to-cart — traced to the cart-mutation resolver rather than the underlying cart logic, and fixed with a narrowly-scoped override.","Added a configurable brand-logo slider and a back-in-stock \"notify me\" mutation, both exposed over GraphQL.","Exposed Tabby buy-now-pay-later merchant configuration via the StoreConfig GraphQL type."]'>
       <h3>Switch</h3>
       <div class="project-meta">Headless PWA Storefront · Adobe Commerce (GraphQL)</div>
       <p class="project-summary">GraphQL-only backend for a fully headless PWA storefront, centered on a drag-and-drop dashboard builder and a root-caused fix for a GraphQL-specific cart bug.</p>
-      <div class="project-tags"><span>GraphQL</span><span>Headless/PWA</span><span>Dashboard Builder</span></div>
+      <ul class="project-highlights">
+        <li>GraphQL-only backend, no classic theme</li>
+        <li>Drag-and-drop dashboard builder</li>
+        <li>Root-caused a GraphQL-specific cart bug</li>
+      </ul>
+      <div class="project-tags"><span>GraphQL</span><span>Headless/PWA</span><span>Dashboard Builder</span><span>Store Locator</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Sterling Machinery"
+      data-meta="USA · Magento Open Source"
+      data-tags='["Architecture","Migration","Cart2Quote","Job-Cost Accounting","Custom Admin Theme","Lead Capture"]'
+      data-bullets='["Designed the system architecture for machinery product management, including the master/child data model.","Migrated the platform from custom PHP to Magento 1, then to Magento 2 Open Source.","Built a full buy/sell/wanted-machinery lead-capture pipeline (five parallel form-to-database-to-admin-grid-to-email-notification systems), plus liquidation-request and shipping-info request flows.","Delivered nine independent custom product data entities — job-cost accounting, equipped-with accessories, specifications, capacity ratings and repair-history tracking — attached directly to the product form.","Built a brand CMS entity with brochure uploads, plus nine standalone directory/landing-page modules (model lists, manufacturer lists, popular searches, special machines).","Delivered a full RFQ/quoting system on top of the third-party Cart2Quote extension, plus four structurally-matched admin reporting screens.","Designed and shipped a custom admin (adminhtml) theme alongside the storefront theme — the only engagement in the portfolio where the admin panel itself was re-skinned.","Built a video/data integration API and a separate external Web API surface for auction feeds.","Implemented Ajax-driven product specification logic and enhanced the Cart2Quote module."]'>
+      <h3>Sterling Machinery</h3>
+      <div class="project-meta">USA · Magento Open Source</div>
+      <p class="project-summary">Designed a master/child machinery data architecture with nine custom product entities, a full buy/sell/wanted lead-capture pipeline, and the portfolio&#39;s only custom-skinned admin theme.</p>
+      <ul class="project-highlights">
+        <li>Master/child machinery data architecture</li>
+        <li>9 custom product entities (job-costing, specs, repairs)</li>
+        <li>Only project with a custom-skinned admin theme</li>
+      </ul>
+      <div class="project-tags"><span>Architecture</span><span>Migration</span><span>Cart2Quote</span><span>Job-Cost Accounting</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Minamin"
+      data-meta="Fashion &amp; Beauty Retail · Adobe Commerce (Magento 2)"
+      data-tags='["Adobe Commerce (Magento 2)","ERP Sync","RabbitMQ","GDPR Consent","Admin CRUD","Custom Theming"]'
+      data-bullets='["Delivered two purchased Magedelight themes (BeautyGo, FashionGo) with the heaviest LESS/SCSS customization footprint in the whole portfolio — 203 style files layered on top of the base themes.","Split ERP sync into two purpose-built modules — a scheduled cron push for inventory, price, product and order data, and a separate async RabbitMQ order-export queue — rather than one monolith.","Built two fully self-built admin CRUD systems from scratch: a banner-slider (desktop/mobile images, page targeting) and a product-label system (attribute-based or manual assignment, store-scoped).","Added a GDPR consent-capture flow at login and registration, with full consent logging.","Implemented a \"Buy Now\" checkout bypass (with bundle-product support) and AJAX add-to-wishlist across listing, product page and search results.","Customized third-party OTP mobile login (Magecomp Mobilelogin) and social login (Magedelight Facebook/Google)."]'>
+      <h3>Minamin</h3>
+      <div class="project-meta">Fashion &amp; Beauty Retail · Adobe Commerce (Magento 2)</div>
+      <p class="project-summary">Two fashion/beauty storefronts with the heaviest LESS/SCSS customization footprint in the portfolio, split ERP sync, and from-scratch banner and product-label admin systems.</p>
+      <ul class="project-highlights">
+        <li>Heaviest LESS/SCSS customization footprint in the portfolio</li>
+        <li>Split ERP sync (scheduled cron + async RabbitMQ)</li>
+        <li>Two from-scratch admin CRUD systems</li>
+      </ul>
+      <div class="project-tags"><span>ERP Sync</span><span>RabbitMQ</span><span>Admin CRUD</span><span>GDPR</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Aquanexus"
+      data-meta="USA · Magento Open Source"
+      data-tags='["Multi-Vendor","Domain Mapping","Webkul","Admin ACL","Multi-Brand Theming","Draft Orders"]'
+      data-bullets='["Built a multi-vendor setup running multiple independent vendor websites from a single Magento instance via domain mapping.","Architected AdvPermission, a from-scratch admin ACL layer scoping orders, customers, products, reports and CMS by website/store and a custom split attribute — rewriting roughly 40 admin grid collections and blocks, the heaviest single-project override footprint audited across the whole portfolio.","Built a Draft-Order/QuickPay flow letting admins generate sandbox-mode payment links with status tracking, ahead of full checkout.","Designed a Payment Reminder Module with automated COD/bank-transfer email reminders, escalating to a final-notice e-mail with an attached PDF.","Customized Webkul modules for vendor registration, purchase orders and split orders.","Maintained a shared base theme powering a family of 8 related storefronts (aqua_tech, market, beyondreef, routemarine, zooxae and more) — the largest theme framework audited in the portfolio at 471 templates and 427 LESS/SCSS files.","Managed ongoing integration of vendor-facing functionality across all storefronts."]'>
+      <h3>Aquanexus</h3>
+      <div class="project-meta">USA · Magento Open Source</div>
+      <p class="project-summary">Multi-vendor marketplace with a from-scratch admin ACL system (AdvPermission) and a shared theme framework powering 8 related storefronts.</p>
+      <ul class="project-highlights">
+        <li>AdvPermission: from-scratch admin ACL by website + split attribute</li>
+        <li>Multi-brand theme framework (8 storefronts)</li>
+        <li>Draft-Order / QuickPay payment flow</li>
+      </ul>
+      <div class="project-tags"><span>Multi-Vendor</span><span>Domain Mapping</span><span>Webkul</span><span>Admin ACL</span></div>
+      <span class="project-open">View details →</span>
+    </div>
+
+    <div class="project-card" tabindex="0" data-project-card
+      data-title="Kalombo"
+      data-meta="Moscow, Russia · Magento Open Source"
+      data-tags='["Performance","Localization","CSV Import","SEO/Schema","GTM"]'
+      data-bullets='["Designed the platform architecture with performance as the primary constraint, shaping module and theme decisions.","Built the platform natively on Magento Open Source with Auto Address API integration for localized address entry.","Set up Russia-specific payment methods to support local market requirements.","Managed CSV product/attribute imports and optimized performance by removing unused modules.","Delivered homepage SEO tooling — Open Graph, Twitter Card and JSON-LD Organization schema, plus Google Tag Manager and AdSense integration, with RU/EN variants keyed by store.","Built an AJAX-driven featured-products widget (6 sort modes, configurable count) layered on top of a purchased product-tab extension."]'>
+      <h3>Kalombo</h3>
+      <div class="project-meta">Moscow, Russia · Magento Open Source</div>
+      <p class="project-summary">Performance-first architecture with Russia-specific payments, localized address entry, and full homepage SEO/schema tooling.</p>
+      <ul class="project-highlights">
+        <li>Performance-first Magento Open Source build</li>
+        <li>RU/EN homepage SEO + schema.org tagging</li>
+        <li>Russia-specific payment + address integrations</li>
+      </ul>
+      <div class="project-tags"><span>Performance</span><span>Localization</span><span>CSV Import</span><span>SEO/Schema</span></div>
       <span class="project-open">View details →</span>
     </div>
 
@@ -204,7 +249,12 @@
       <h3>Punjabstore</h3>
       <div class="project-meta">Grocery &amp; Retail · Magento Open Source</div>
       <p class="project-summary">Configurable-product pricing, mini-cart messaging and PDF invoice localization for a Codazon-themed storefront.</p>
-      <div class="project-tags"><span>Catalog Pricing</span><span>Mini-Cart</span><span>PDF Invoices</span></div>
+      <ul class="project-highlights">
+        <li>Lowest-child configurable-product pricing</li>
+        <li>Mini-cart delivery/discount messaging</li>
+        <li>Localized PDF invoice fields</li>
+      </ul>
+      <div class="project-tags"><span>Catalog Pricing</span><span>Mini-Cart</span><span>PDF Invoices</span><span>Mobile API</span></div>
       <span class="project-open">View details →</span>
     </div>
 
@@ -216,6 +266,11 @@
       <h3>Siemens</h3>
       <div class="project-meta">B2B Request-a-Quote · Magento Open Source</div>
       <p class="project-summary">Parallel Request-a-Quote system replacing standard cart/checkout for quote-eligible products, with sitewide price-hiding and admin category tooling.</p>
+      <ul class="project-highlights">
+        <li>Parallel Request-a-Quote system</li>
+        <li>Sitewide price-hiding for quote items</li>
+        <li>Admin category import/export tooling</li>
+      </ul>
       <div class="project-tags"><span>Request-a-Quote</span><span>B2B</span><span>Admin Tools</span></div>
       <span class="project-open">View details →</span>
     </div>
@@ -228,6 +283,11 @@
       <h3>2D Layer</h3>
       <div class="project-meta">Custom Print &amp; Signage · Magento Open Source</div>
       <p class="project-summary">Configurable build-and-price flow for custom-cut printed film/vinyl products, with a Request-a-Quote mini-cart and a from-scratch theme.</p>
+      <ul class="project-highlights">
+        <li>Configurable film/vinyl product builder</li>
+        <li>Request-a-Quote mini-cart flow</li>
+        <li>Custom Luma/Blank-based theme</li>
+      </ul>
       <div class="project-tags"><span>Product Configurator</span><span>AJAX Cart</span><span>Custom Theme</span></div>
       <span class="project-open">View details →</span>
     </div>

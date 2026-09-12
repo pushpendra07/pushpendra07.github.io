@@ -82,7 +82,7 @@ header.scrolled{border-bottom-color:var(--border)}
 .btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;border:1px solid var(--border-strong);color:var(--text);font:600 14px 'Inter',sans-serif}
 .btn-secondary:hover{border-color:var(--brand)}
 
-.hero-stats{display:grid;grid-template-columns:repeat(4,auto);gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid var(--border)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,auto);gap:36px;margin-top:40px;padding-top:32px;border-top:1px solid var(--border)}
 .id-stat-value{font:800 26px/1 'Inter',sans-serif;color:var(--text-strong)}
 .id-stat-label{font:500 11.5px/1.4 'Inter',sans-serif;color:var(--muted-2);margin-top:5px}
 
